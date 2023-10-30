@@ -20,10 +20,12 @@ runs:
     - uses: actions/setup-node@v3
       with:
         node-version: 18
+    - name: Install yarn
+      run: npm install -g yarn
 
     - name: Install Code Review GPT
       shell: bash
-      run: npm install code-review-gpt
+      run: yarn add code-review-gpt
     
     - name: Run Code Review GPT
       shell: bash
