@@ -21,6 +21,7 @@ runs:
       with:
         node-version: 18
     - name: Install yarn
+      shell: bash
       run: npm install -g yarn
 
     - name: Install Code Review GPT
